@@ -53,10 +53,11 @@ main {
     height: 100%;
 
     .icons a {
+        color: $secondary-color;
         padding: 0.2rem 0.5rem;
 
         &:hover {
-            color: $secondary-color;
+            color: #fff;
             @include easeOut();
         }
     }
