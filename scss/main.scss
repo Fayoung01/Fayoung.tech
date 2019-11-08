@@ -1,6 +1,5 @@
 @import 'config';
 @import 'menu';
-@import 'mobile';
 
 * {
     box-sizing: border-box;
@@ -9,7 +8,7 @@
 body {
     @include background();
     background: $primary-color;
-    color: #fff;
+    color: set-text-color($primary-color);
     height: 100%;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -51,7 +50,7 @@ header {
 
 main {
     padding: 4rem;
-    height: 100%;
+    min-height: calc(100vh - 60px);
 
     .icons a {
         color: $secondary-color;
@@ -71,3 +70,33 @@ main {
         }
     }
 }
+
+.about-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+
+    .bio-image {
+        width: auto;
+        height: 500px;
+        background-attachment: cover;
+        margin: 0 auto;
+        border: $secondary-color 3px solid;
+        border-radius: 10px;
+    }
+
+    .bio {
+        font-size: 1.5rem;
+    }
+}
+
+#main-footer {
+    text-align: center;
+    padding: 1rem;
+    background: lighten($primary-color, 10);
+    color: set-text-color($primary-color);
+    height: 60px;
+}
+
+// Mobile view css to be implemented after all css
+@import 'responsive';
