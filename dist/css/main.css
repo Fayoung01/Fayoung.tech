@@ -167,7 +167,7 @@ main {
     width: auto;
     height: 500px;
     background-attachment: cover;
-    margin: 0 auto;
+    margin: 4rem auto 0 auto;
     border: #00b7ffd5 3px solid;
     border-radius: 10px; }
   .about-info .bio {
@@ -204,6 +204,10 @@ main {
       color: #000; }
       .boxes div:hover span {
         color: #000; }
+
+#contact .icons {
+  text-align: center;
+  margin-top: 2rem; }
 
 .btn, .btn-light, .btn-dark {
   display: block;
@@ -244,7 +248,7 @@ main {
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem;
-      font-size: 30px; }
+      font-size: 35px; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -267,6 +271,7 @@ main {
     grid-template-columns: 1fr; }
     .about-info .bio-image {
       width: auto;
+      margin-top: 1rem;
       height: 300px;
       border-radius: 50%; }
   .projects {

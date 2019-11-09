@@ -80,7 +80,7 @@ main {
         width: auto;
         height: 500px;
         background-attachment: cover;
-        margin: 0 auto;
+        margin: 4rem auto 0 auto;
         border: $secondary-color 3px solid;
         border-radius: 10px;
     }
@@ -135,7 +135,17 @@ main {
             }
         }
     }
+
+
 }
+
+#contact {
+    .icons {
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
+
 
 // Button styles
 .btn {
