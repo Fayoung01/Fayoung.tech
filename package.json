@@ -8,9 +8,6 @@
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
   },
-  "engines": {
-    "node": "6.12.0"
-  },
   "author": "Fayoung Uhie",
   "license": "MIT",
   "dependencies": {
